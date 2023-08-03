@@ -1,0 +1,535 @@
+.container {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+#idLabel {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#generatedID {
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: -40px;
+  max-width: 200px;
+}
+
+#resetButton {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px; /* Add margin-left */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.toggle input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.preferences-container {
+  display: flex;
+align-items: center;
+  justify-content: space-between;
+margin-left: 20px; /* Add margin-bottom */
+}
+
+.preference {
+  display: flex;
+  align-items: center;
+}
+
+.preference label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.generated-id-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.customize-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.customize-heading {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.customize-description {
+  font-size: 14px;
+}
+
+
+.ribbon {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+  background-color: #f2f2f2;
+}
+
+.tab-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.content {
+  padding: 10px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.earnings-heading {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.account-fields .field {
+  text-align: left;
+}
+
+.earnings-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0; /* No padding on the container */
+  box-sizing: border-box;
+}
+
+.earnings-item {
+  flex: 1;
+  margin: 0 10px; /* Adjust the margins of all items */
+}
+
+.earnings-item:nth-child(2) .rounded-rectangle {
+  height: 100px; /* Adjust the height of the middle rectangle */
+}
+
+.rounded-rectangle {
+  width: 150px;
+  height: 55px;
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+.rounded-rectangle.left {
+  width: 120px;
+  height: 50px;
+  margin-left: 10px
+
+}
+
+.rounded-rectangle.right {
+  width: 120px;
+  height: 50px;
+  margin-left: 10px
+}
+
+.rounded-rectangle.medium {
+  width: 200px;
+  height: 50px;
+  margin-left: 30px
+}
+
+.rounded-rectangle h2 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.rounded-rectangle p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.withdraw-button {
+  position: relative;
+  top: -10px; /* Adjust as needed */
+  width: 120px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.earning-table {
+  width: 100%; /* Use the full width of the container */
+  border-collapse: collapse; /* Remove the default table borders */
+  table-layout: fixed; /* Ensures equal column widths */
+  margin: auto; /* Centers the table */
+}
+
+.earning-table td {
+  text-align: center; /* Center the text in each cell */
+  padding: 15px 0; /* Add vertical padding between rows */
+  border-bottom: 1px solid #ccc; /* Add a subtle bottom border to each row */
+  font-size: 14px; /* Set the font size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.earning-table tr:last-child td {
+  border-bottom: none; /* Remove the bottom border from the last row */
+}
+
+
+
+/* Updated CSS for Account Settings Tab */
+.account-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.checkbox-label {
+  margin-left: 10px;
+}
+
+.username-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#email,
+#password,
+#pin {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+#currency {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  width: 100px;
+}
+
+#currency option {
+  font-size: 14px;
+}
+
+#my_wallet.container {
+  text-align: center;
+}
+
+#my_wallet h2 {
+  font-size: 24px;
+}
+
+#balance {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+#receive_button,
+#send_button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#receive_button:hover,
+#send_button:hover {
+  background-color: #0056b3;
+}
+
+.transaction-list {
+  margin-top: 20px;
+}
+
+.curved-rectangle {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-field {
+  width: 25%;
+  text-align: center;
+}
+
+.transaction-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc; /* Add this line */
+  padding: 10px 0;
+}
+
+#account_settings .account-fields {
+  margin-top: 20px;
+}
+
+#account_settings .field {
+  margin-bottom: 10px;
+}
+
+#account_settings label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#account_settings input[type="text"],
+#account_settings input[type="password"],
+#account_settings select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#account_settings button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categories-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.categories-table th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.categories-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.categories-table input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#editButton {
+  margin-top: 10px;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.see-section,
+.avoid-section {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-height: 200px;
+}
+
+.category-button {
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: move;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  width: fit-content;
+  display: inline-block;
+}
+
+.avoid-section .category-button {
+  margin-right: 5px;
+}
+
+#notification {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+#notification.show {
+  display: block;
+}

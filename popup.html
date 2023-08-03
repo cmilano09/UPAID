@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPAID</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div class="ribbon">
+    <div class="tab active" data-target="ad_preferences">
+      <p class="tab-text">Ad Preferences</p>
+    </div>
+    <div class="tab" data-target="history_earnings">
+      <p class="tab-text">History & Earnings</p>
+    </div>
+    <div class="tab" data-target="account_settings">
+      <p class="tab-text">Account Settings</p>
+    </div>
+    <div class="tab" data-target="my_wallet">
+      <p class="tab-text">My Wallet</p>
+    </div>
+  </div>
+
+  <div class="content">
+
+
+    <div class="content">
+
+
+<div class="content">
+<!-- Ad Preferences Tab -->
+<div id="ad_preferences" class="tab-content active">
+  <div class="container">
+    <img src="logo.png" alt="UPAID Logo" id="logo">
+    <h2>Choose your advertising preferences</h2>
+    <p class="description">Enjoy smoother navigation without annoying pop-ups. We bring your desired privacy settings with you across the web.</p>
+    <div class="preferences-container">
+      <div class="preference">
+        <label for="personalizedAds">Personalized Ads:</label>
+        <label class="toggle">
+          <input type="checkbox" id="personalizedAds" />
+          <span class="slider"></span>
+        </label>
+        <p id="idLabel">Your Advertising ID:</p>
+        <div class="generated-id-container">
+          <p id="generatedID">Loading...</p>
+          <button id="resetButton">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="customize-text">
+      <p class="customize-heading">Customize your experience</p>
+      <p class="customize-description">Choose the topics and brands you want to see or avoid</p>
+    </div>
+    <div class="categories-container">
+      <div class="see-section">
+        <h3>See</h3>
+        <div class="category-button" draggable="true">Arts & Entertainment</div>
+        <div class="category-button" draggable="true">Automotive</div>
+        <div class="category-button" draggable="true">Business</div>
+        <div class="category-button" draggable="true">Careers</div>
+        <div class="category-button" draggable="true">Education</div>
+        <div class="category-button" draggable="true">Family & Parenting</div>
+        <div class="category-button" draggable="true">Health & Fitness</div>
+        <div class="category-button" draggable="true">Food & Drink</div>
+        <div class="category-button" draggable="true">Hobbies & Interests</div>
+        <div class="category-button" draggable="true">Home & Garden</div>
+        <div class="category-button" draggable="true">Law, Gov't, & Politics</div>
+        <div class="category-button" draggable="true">News</div>
+      </div>
+      <div class="avoid-section" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h3>Avoid</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- History & Earnings Tab -->
+<div id="history_earnings" class="tab-content">
+  <div class="container">
+    <img src="logo.png" alt="UPAID Logo" id="logo">
+    <div class="earnings-container">
+      <div class="earnings-item">
+       <div class="rounded-rectangle">
+        <div class="rounded-rectangle.left">
+          <div class="earnings-text">
+            <h2>Last 30 Days</h2>
+            <p>$10.09</p>
+          </div>
+</div>       
+ </div>
+      </div>
+      <div class="earnings-item">
+       <div class="rounded-rectangle">
+        <div class="rounded-rectangle.medium">
+          <div class="earnings-text">
+            <h2>Available to Withdraw</h2>
+            <p>$13.49</p>
+	    <button class="withdraw-button">Withdraw</button>
+          </div>
+        </div>
+	</div>
+      </div>
+      <div class="earnings-item">
+<div class="rounded-rectangle">
+        <div class="rounded-rectangle.right">
+          <div class="earnings-text">
+            <h2>Lifetime Earnings</h2>
+            <p>$87.92</p>
+          </div>
+          
+        </div>
+</div>
+
+      </div>
+      
+    </div>
+    <table class="earning-table">
+      <tr>
+        <td>Today</td>
+        <td>You saw 376 ads (so far)</td>
+        <td>$0.38</td>
+      </tr>
+      <tr>
+        <td>Yesterday</td>
+        <td>You saw 454 ads</td>
+        <td>$0.45</td>
+      </tr>
+      <tr>
+        <td>2023-07-09</td>
+        <td>You saw 148 ads</td>
+        <td>$0.15</td>
+      </tr>
+      <tr>
+        <td>2023-07-08</td>
+        <td>You saw 284 ads</td>
+        <td>$0.28</td>
+      </tr>
+      <tr>
+        <td>2023-07-07</td>
+        <td>You saw 473 ads</td>
+        <td>$0.47</td>
+      </tr>
+      <tr>
+        <td>2023-07-06</td>
+        <td>You saw 356 ads</td>
+        <td>$0.36</td>
+      </tr>
+      <tr>
+        <td>2023-07-05</td>
+        <td>You saw 294 ads</td>
+        <td>$0.29</td>
+      </tr>
+      <tr>
+        <td>2023-07-04</td>
+        <td>You saw 288 ads</td>
+        <td>$0.29</td>
+      </tr>
+      <tr>
+        <td>2023-07-03</td>
+        <td>You saw 279 ads</td>
+        <td>$0.28</td>
+      </tr>
+      <tr>
+        <td>2023-07-02</td>
+        <td>You saw 413 ads</td>
+        <td>$0.41</td>
+      </tr>
+      <tr>
+        <td>2023-07-01</td>
+        <td>You saw 317 ads</td>
+        <td>$0.32</td>
+      </tr>
+      <tr>
+        <td>2023-06-30</td>
+        <td>You saw 185 ads</td>
+        <td>$0.18</td>
+      </tr>
+      <tr>
+        <td>2023-06-29</td>
+        <td>You saw 484 ads</td>
+        <td>$0.48</td>
+      </tr>
+      <tr>
+        <td>2023-06-28</td>
+        <td>You saw 467 ads</td>
+        <td>$0.47</td>
+      </tr>
+      <tr>
+        <td>2023-06-27</td>
+        <td>You saw 175 ads</td>
+        <td>$0.17</td>
+      </tr>
+      <tr>
+        <td>2023-06-26</td>
+        <td>You saw 185 ads</td>
+        <td>$0.18</td>
+      </tr>
+      <tr>
+        <td>2023-06-25</td>
+        <td>You saw 303 ads</td>
+        <td>$0.30</td>
+      </tr>
+      <tr>
+        <td>2023-06-24</td>
+        <td>You saw 390 ads</td>
+        <td>$0.39</td>
+      </tr>
+      <tr>
+        <td>2023-06-23</td>
+        <td>You saw 482 ads</td>
+        <td>$0.48</td>
+      </tr>
+      <tr>
+        <td>2023-06-22</td>
+        <td>You saw 100 ads</td>
+        <td>$0.10</td>
+      </tr>
+    </table>    
+  </div>
+</div>
+
+
+<!-- Account Settings Tab -->
+<div id="account_settings" class="tab-content">
+  <div class="container">
+    <img src="logo.png" alt="UPAID Logo" id="logo">
+    <div class="account-fields">
+      <div class="field">
+        <label for="username"><strong>Username:</strong></label>
+        <input type="text" id="username" disabled />
+      </div>
+      <div class="field">
+        <label for="email"><strong>Email:</strong></label>
+        <input type="text" id="email" disabled />
+      </div>
+      <div class="field">
+        <label for="authenticated"><strong>Authenticated?</strong></label>
+        <input type="checkbox" id="authenticated" disabled />
+      </div>
+      <div class="field">
+        <label for="password"><strong>Password:</strong></label>
+        <input type="password" id="password" disabled />
+      </div>
+      <div class="field">
+        <label for="pin"><strong>PIN:</strong></label>
+        <input type="password" id="pin" disabled />
+      </div>
+      <div class="field">
+        <label for="currency"><strong>Currency:</strong></label>
+        <select id="currency" disabled>
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="gbp">GBP</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="edit_button">Edit</button>
+    <button id="save_button" style="display: none;">Save</button>
+
+  </div>
+</div>
+
+
+<!-- My Wallet Tab -->
+<div id="my_wallet" class="tab-content">
+  <div class="container">
+    <img src="logo.png" alt="UPAID Logo" id="logo">
+    <h2 id="balance">Balance: </h2> <!-- Add an ID to the balance element -->
+    <button id="receive_button">Receive Payment</button>
+    <button id="send_button">Send Payment</button>
+    
+    <div class="transaction-list" id="transaction_list">
+      <div class="curved-rectangle">
+        <div class="transaction-header">
+          <div class="transaction-field">Date</div>
+          <div class="transaction-field">Type</div>
+          <div class="transaction-field">Amount</div>
+          <div class="transaction-field">Comment</div>
+        </div>
+        <div class="transaction-entry">
+          <div class="transaction-field">2023-06-12</div>
+          <div class="transaction-field">Send</div>
+          <div class="transaction-field">$0.05</div>
+          <div class="transaction-field">Washington Post article</div>
+        </div>
+        <div class="transaction-entry">
+          <div class="transaction-field">2023-06-10</div>
+          <div class="transaction-field">Send</div>
+          <div class="transaction-field">$0.05</div>
+          <div class="transaction-field">Tip for @twitteruser</div>
+        </div>
+        <div class="transaction-entry">
+          <div class="transaction-field">2023-06-08</div>
+          <div class="transaction-field">Receive</div>
+          <div class="transaction-field">$0.20</div>
+          <div class="transaction-field">Received payment from @twitteruser</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-target');
+        activateTab(target);
+      });
+    });
+
+    function activateTab(target) {
+      tabs.forEach(tab => tab.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+      const selectedTab = document.querySelector(`#${target}`);
+      selectedTab.classList.add('active');
+      document.querySelector(`[data-target="${target}"]`).classList.add('active');
+    }
+  </script>
+<script src="popup.js"></script>
+
+
+</body>
+</html>

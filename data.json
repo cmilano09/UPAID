@@ -1,0 +1,8 @@
+{
+  "username": "JohnDoe",
+  "email": "johndoe@example.com",
+  "authenticated": true,
+  "password": "********",
+  "pin": "****",
+  "currency": "usd"
+}
